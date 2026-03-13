@@ -1,0 +1,25 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "litellm": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "LiteLLM Proxy",
+      "options": {
+        "baseURL": "https://ivy.joinhandshake.com/v1/",
+        "apiKey": "{env:LITELLM_API_KEY}"
+      },
+      "models": {
+        "model_A": {
+          "name": "Model A"
+        },
+        "model_B": {
+          "name": "Model B"
+        },
+        "model_C": {
+          "name": "Model C"
+        }
+      }
+    }
+  },
+  "model": "litellm/model_A"
+}
